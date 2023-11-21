@@ -9,5 +9,5 @@ As inputs the macro takes two images: 1. DIC image of yeast cells; 2. the corres
 
 A microscope used for the acquisition of both modalities: Olympus IX-71 inverted microscope with a 100x PlanApochromat objective (NA 1.4), GFP filter block exc. max.488, em. max. 507, Nomarski Differential Interference Contrast (DIC).
 
-Fluorescence images of mitochondria (WILD Control and WILD Treated):
+Fluorescence images of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
