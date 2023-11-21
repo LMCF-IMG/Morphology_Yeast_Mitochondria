@@ -11,3 +11,5 @@ A **microscope** used for the acquisition of both modalities: Olympus IX-71 inve
 
 Fluorescence images of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
+
+DIC images of yeast cells (WILD Control/WILD Treated):
