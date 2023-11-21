@@ -5,7 +5,7 @@ Analysis of morphology of healthy and treated *mitochondria* in images acquired 
 
 ### Short description
 
-As inputs the macro takes two images: 1. DIC image of yeast cells; 2. the corresponding fluorescence image of mitochondria of the same field of view. 
+As inputs the macro takes two images: 1. fluorescence image of mitochondria; 2. DIC image of corresponding yeast cells of the same field of view. 
 
 A microscope used for the acquisition of both modalities: Olympus IX-71 inverted microscope with a 100x PlanApochromat objective (NA 1.4), GFP filter block exc. max.488, em. max. 507, Nomarski Differential Interference Contrast (DIC).
 
