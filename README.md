@@ -1,5 +1,5 @@
 # Morphology_Yeast_Mitochondria
-Analysis of morphology of *mitochondria* in images acquired by a widefield fluorescence microscope (WF).
+Analysis of morphology of *mitochondria* in images acquired by a widefield fluorescence microscope (WF) to distinguish differences between controls (both wild and treated) and the experiment (both wild and treated as well).
 
 **Macro for [ImageJ/Fiji](https://fiji.sc/).**
 
