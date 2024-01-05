@@ -12,10 +12,10 @@ A **microscope** used for the acquisition of both modalities: Olympus IX-71 inve
 Fig. 1: Fluorescence images of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
 
-Fig. 2: Fluorescence images of mitochondria segmented by **global thresholding** (Macro...):
+Fig. 2: Fluorescence images of mitochondria segmented by **global thresholding** *(Macro...)*:
 ![GlobThresh-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/b8bbfd60-1801-4afb-8544-99fadbb0f552)
 
-Fig. 2: Fluorescence images of mitochondria segmented by the retrained model of [**MitoSegNet**](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8):
+Fig. 2: Fluorescence images of mitochondria segmented by the retrained model *(Model...)* of [**MitoSegNet**](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8):
 ![MitoSegNet-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/1d5e7f21-1311-4fee-9c70-5adfa75cf7e8)
 
 Fig. 3: DIC images of yeast cells:
