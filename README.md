@@ -22,6 +22,7 @@ Fig. 4: [**Local thickness**](https://imagej.net/imagej-wiki-static/Local_Thickn
 ![LocalThickness-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/854982f6-bd8c-42d1-a7ea-b46b9734b035)
 
 Fig. 5: [**Skeletons**](https://imagej.net/plugins/skeletonize3d) created from data segmented by **MitoSegNet**, see Fig. 3:
+![Skeleton-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/e3204a1e-dd76-4f1e-8003-b63d48388288)
 
 Fig. 6: **DIC** images of yeast cells:
 ![DIC-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/c1503bd4-4bee-4a52-8c4d-9b3188400a00)
