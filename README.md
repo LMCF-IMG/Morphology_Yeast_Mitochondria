@@ -21,5 +21,7 @@ Fig. 2: Fluorescence images of mitochondria segmented by [**MitoSegNet**](https:
 Fig. 3: DIC images of yeast cells:
 ![DIC-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/c1503bd4-4bee-4a52-8c4d-9b3188400a00)
 
-dic seg by cellpose
+Fig. 4: DIC images of yeast cells segmented by [**Cellpose**](https://github.com/MouseLand/cellpose):
+![Cellpose-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/c8bccab0-f102-4702-9492-e65a092c75c3)
+
 ...
