@@ -25,10 +25,10 @@ Fig. 2: Fluorescence images of mitochondria **segmented** by global thresholding
 Fig. 3: Fluorescence images of mitochondria **segmented** by the retrained model *(Model...)* of [MitoSegNet](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8):
 ![MitoSegNet-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/1d5e7f21-1311-4fee-9c70-5adfa75cf7e8)
 
-Fig. 4: [**Local thickness**](https://imagej.net/imagej-wiki-static/Local_Thickness) images created from data segmented by MitoSegNet, see Fig. 3 :
+Fig. 4: [Local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) images created from data segmented by MitoSegNet, see Fig. 3 :
 ![LocalThickness-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/854982f6-bd8c-42d1-a7ea-b46b9734b035)
 
-Fig. 5: [**Skeletons**](https://imagej.net/plugins/skeletonize3d) created from data segmented by MitoSegNet, see Fig. 3:
+Fig. 5: [Skeletons](https://imagej.net/plugins/skeletonize3d) created from data segmented by MitoSegNet, see Fig. 3:
 ![Skeleton-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/e3204a1e-dd76-4f1e-8003-b63d48388288)
 
 Fig. 6: **DIC** images of yeast cells:
