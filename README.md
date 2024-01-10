@@ -1,7 +1,7 @@
 # Morphology_Yeast_Mitochondria
 Analysis of morphology of healthy and treated *mitochondria* in images acquired by a widefield fluorescence microscope (WF) to distinguish differences between the controls (both wild and treated) and the experiments (both wild and treated as well). The analysis was done with and the pictures were created and provided by Dr. Jana Vojtová, [Laboratory of Cell Reproduction, Institute of Microbiology of the Czech Academy of Sciences, Prague, Czech Republic](https://mbucas.cz/en/research/biology-of-the-cell-and-bioinformatics/laboratory-of-cell-reproduction/))
 
-**Macro for [ImageJ/Fiji](https://fiji.sc/).**
+**Macros for [ImageJ/Fiji](https://fiji.sc/).**
 
 ### Short description
 
