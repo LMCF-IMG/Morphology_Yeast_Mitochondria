@@ -7,7 +7,7 @@ Analysis of morphology of healthy and treated *mitochondria* in images acquired 
 
 Two images are **inputs** to the analysis: 1. fluorescence image of mitochondria, **Fig. 1**; 2. DIC image of corresponding yeast cells of the same field of view, **Fig. 6**. DIC images are used to relate segmented mitochondria and their parameters to individual cells.
 
-A **microscope** used for the acquisition of both modalities: Olympus IX-71 inverted microscope with a 100x PlanApochromat objective (NA 1.4), GFP filter block exc. max. 488, em. max. 507; Nomarski Differential Interference Contrast (DIC) mode.
+A **microscope** used for the acquisition of both modalities: Olympus IX-71 inverted microscope with a 100x PlanApochromat objective (NA 1.4), GFP filter block exc. max. 488/em. max. 507; Nomarski Differential Interference Contrast (DIC) mode.
 
 We have developed **two macros** for processing images of mitochondria.
 
