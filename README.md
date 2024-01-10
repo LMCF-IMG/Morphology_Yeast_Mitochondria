@@ -11,12 +11,12 @@ A **microscope** used for the acquisition of both modalities: Olympus IX-71 inve
 
 We have developed **two macros** for processing images of mitochondria.
 
-- **The first macro** *(název)* preprocesses fluorescence images using [(Subtract background)](https://imagejdocu.list.lu/gui/process/subtract_background), eliminating outliers, applying grayscale and binary morphology to reduce data inhomogeneity, and a [Tubeness filter](https://www.longair.net/edinburgh/imagej/tubeness/) to enhance the visualization quality of filamentous structures (mitochondria). Subsequently, a global thresholding method with a predefined range of thresholds is applied to the image, and a particle analyzer is utilized to eliminate small resulting objects. The best segmented image with an appropriate threshold is then selected by an expert, see **Fig. 2** *(thresholds applied)*.
+- **The first macro** *(název)* preprocesses fluorescence images using [(Subtract background)](https://imagejdocu.list.lu/gui/process/subtract_background), eliminating outliers, applying grayscale and binary morphology to reduce data inhomogeneity, and a [Tubeness filter](https://www.longair.net/edinburgh/imagej/tubeness/) to enhance the visualization quality of filamentous structures (mitochondria). Subsequently, a global thresholding method with a predefined range of thresholds is applied to the image, and a particle analyzer is utilized to eliminate small resulting objects. The best segmented image with an appropriate threshold is then selected by an expert, see **Fig. 2** (thresholds applied: left=4, right=13).
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
 
-Fig. 2: Fluorescence images of mitochondria **segmented** by **global thresholding** *(Macro...)*:
+Fig. 2: Fluorescence images of mitochondria **segmented** by **global thresholding** *(Macro...)*, (thresholds applied: left=4, right=13):
 ![GlobThresh-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/b8bbfd60-1801-4afb-8544-99fadbb0f552)
 
 Fig. 3: Fluorescence images of mitochondria **segmented** by the retrained model *(Model...)* of [**MitoSegNet**](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8):
