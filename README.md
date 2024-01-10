@@ -16,6 +16,8 @@ We have developed **two macros** for processing images of mitochondria.
 
 For comparison, we **segmented mitochondria using two different methods, Fig. 2-3**. The first method involved global thresholding *(macro)*, as shown in Fig. 2, while the second method utilized [MitoSegNet](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8), depicted in Fig. 3. The aim was to demonstrate the advantages of deep learning for more precise mitochondrial segmentation. However, the original model of the MitoSegNet project did not entirely succeed with our images. Therefore, we annotated our images, retrained the model, and here on this page *(file name)*, we offer it for potential further utilization with similar data.
 
+A couple of images (mitochondria and DIC) for testing purposes is attached to this webpage. It is thus possible to practically try out both the attached macros for global thresholding and subsequent mitochondrial analysis, respectively. In case you wish to experiment with thresholding mitochondria using [MitoSegNet](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8), which offers a comprehensive application for mitochondrial segmentation, the retrained model is also available *(filename)*.
+
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
 
