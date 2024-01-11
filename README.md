@@ -47,7 +47,7 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 
 #### Computation of Branching and Filamentous Factors from the numerical results coming from the "MITO_CELL_BASED_ANALYSIS.ijm"
 
-........
+???
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
