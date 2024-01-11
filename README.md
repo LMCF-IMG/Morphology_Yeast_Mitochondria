@@ -46,7 +46,7 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
 
-Fig. 2: Fluorescence images of mitochondria **segmented** by global thresholding, "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", (thresholds applied: left=4, right=13):
+Fig. 2: Fluorescence images of mitochondria **segmented** by global thresholding, using "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", (thresholds applied: left=4, right=13):
 ![GlobThresh-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/b8bbfd60-1801-4afb-8544-99fadbb0f552)
 
 Fig. 3: Fluorescence images of mitochondria **segmented** by the retrained model *(Model...)* of [MitoSegNet](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8):
