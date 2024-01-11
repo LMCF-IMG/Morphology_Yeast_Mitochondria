@@ -18,7 +18,7 @@ For comparison, we **segmented mitochondria using two different methods, Fig. 2-
 
 A triplet of images (mitochondria, their segmentation by MitoSegNet and DIC) for testing purposes is attached to this webpage. It is thus possible to practically try out both the attached macros for global thresholding and subsequent mitochondrial analysis, respectively. In case you wish to experiment with thresholding mitochondria using [MitoSegNet](https://github.com/mitosegnet), which offers a comprehensive application for mitochondrial segmentation, the retrained model is also available:
 
-[Link to retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
+[Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
 
 ### Comments to macros attached
 
