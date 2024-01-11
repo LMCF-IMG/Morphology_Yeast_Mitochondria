@@ -47,11 +47,11 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 
 ### Computation of Branching and Filamentous Factors from numerical results from "MITO_CELL_BASED_ANALYSIS.ijm"
 
-Branching Factor = SUMA of all branch points of skeletons in the image / SUMA of all end points of skeleton in the image.
+**Branching Factor** = SUMA of all branch points of skeletons in the image / SUMA of all end points of skeleton in the image.
 
 It is evaluated for the whole image of segmented mitochondria using resulting "*-Branching-Factor.CSV" file. Apply summing all values in column C-Junctions (=branch points), the same in column D-End-point voxels (=end points) and compute the value. The higher Branching Factor, the higher richness and the mutual interconnection of mitochondria; the lower Branching Factor, the shorter and separated mitochondria in the image.
 
-Filamentous Factor = ...
+**Filamentous Factor** = ...
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
