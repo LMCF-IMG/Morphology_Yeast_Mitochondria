@@ -39,4 +39,15 @@ Fig. 6: **DIC** images of yeast cells:
 Fig. 7: DIC images of yeast cells **segmented** by [Cellpose](https://github.com/MouseLand/cellpose):
 ![Cellpose-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/c8bccab0-f102-4702-9492-e65a092c75c3)
 
-...
+### Comments to macros attached
+
+General format of our images:
+*_DIC_number.tif = DIC image;
+*_pro_number.tif = fluorescence image with mitochondria;
+*_SEG_number.tif = segmented mitochondria image; 
+
+#### MITO_MULTI_GLOBAL_THRESHOLDING.ijm
+
+Two parameters here are firstly, "noiseSizeInPixels", i.e. after global thresholding objects having sizes smaller and equal to this number are removed from the picture. Secondly, "numThresh" is number of consecutive global thresholds applied to the fluorescence image.
+
+Using: Open image file "alpha_WT_control_pro_02.tif" in Fiji, then open macro file "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", press Run and "numThresh" images will be created in the directory where "alpha_WT_control_pro_02.tif" is placed.
