@@ -39,6 +39,7 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 - [Cellpose](https://github.com/MouseLand/cellpose) environment created and installed
 - [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installed
 
+**Parameters** are here strings defining the above mentioned naming convention and image callibration.
 
 
 
