@@ -20,7 +20,7 @@ A triplet of images (mitochondria, their segmentation by MitoSegNet and DIC) for
 
 ### Comments to macros attached
 
-General format of our images:
+General naming convention of our images:
 - *_DIC_number.tif = DIC image;
 - *_pro_number.tif = fluorescence image with mitochondria;
 - *_SEG_number.tif = segmented mitochondria image; 
