@@ -31,6 +31,16 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 
 **Using**: Open image file "alpha_WT_control_pro_02.tif" in Fiji, then open macro file "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", press Run and "numThresh" images will be created in the directory where "alpha_WT_control_pro_02.tif" is placed. Preprocessed version of the input image is also stored with the suffix "-MITOS-ENH.tif". The chosen binary image renamed according to the above mentioned convention can enter the following analysis.
 
+#### MITO_CELL_BASED_ANALYSIS.ijm
+
+##### Prerequisities:
+
+- [Anaconda](https://www.anaconda.com/) installed
+- [Cellpose](https://github.com/MouseLand/cellpose) environment created and installed
+- [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installed
+
+
+
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
