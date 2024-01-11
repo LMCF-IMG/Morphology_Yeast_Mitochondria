@@ -23,9 +23,9 @@ A triplet of images (mitochondria, their segmentation by MitoSegNet and DIC) for
 ### Comments to macros attached
 
 General naming convention of our images:
-- *Experiment Name* _DIC_ *number*.tif = DIC image;
-- *Experiment Name* _pro_ *number*.tif = fluorescence image with mitochondria;
-- *Experiment Name* _SEG_ *number*.tif = segmented mitochondria image; 
+- *Experiment Name_*DIC*_number*.tif = DIC image;
+- *Experiment Name_*pro*_number*.tif = fluorescence image with mitochondria;
+- *Experiment Name_*SEG*_number*.tif = segmented mitochondria image; 
 
 #### MITO_MULTI_GLOBAL_THRESHOLDING.ijm
 
