@@ -49,7 +49,7 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 
 **Branching Factor** = SUMA of all branch points of skeletons in the image / SUMA of all end points of skeleton in the image.
 
-It is evaluated for the whole image of segmented mitochondria using resulting "*-Branching-Factor.CSV" file. Apply summing all values in column C-Junctions (=branch points), the same in column D-End-point voxels (=end points) and compute the value. The higher Branching Factor, the higher richness and the mutual interconnection of mitochondria; the lower Branching Factor, the shorter and separated mitochondria in the image.
+It is evaluated for the whole image of segmented mitochondria using resulting "*-Branching-Factor.CSV" file. Apply summing all values in the column C-Junctions (=branch points), the same in the column D-End-point voxels (=end points) and compute the value. The higher Branching Factor, the higher richness and the mutual interconnections of mitochondria; the lower Branching Factor, the shorter and the more separated mitochondria in the image.
 
 **Filamentous Factor** = ...
 
