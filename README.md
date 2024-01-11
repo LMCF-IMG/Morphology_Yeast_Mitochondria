@@ -39,9 +39,9 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 - [Cellpose](https://github.com/MouseLand/cellpose) environment created and installed
 - [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installed
 
-**Parameters** are here strings defining the above mentioned naming convention and image callibration.
+**Parameters** are here *strings* defining the above mentioned naming convention and *image callibration*.
 
-
+**Using**: Open image file "alpha_WT_control_DIC_02.tif" in Fiji, then open macro file "MITO_CELL_BASED_ANALYSIS.ijm", press Run. Macro opens other files, i.e. "alpha_WT_control_pro_02.tif" and "alpha_WT_control_SEG_02.tif" and runs the morfological analysis of mitochondria individually for all yeast cells. All results are stored in the directory where "alpha_WT_control_DIC_02.tif" is placed.
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
