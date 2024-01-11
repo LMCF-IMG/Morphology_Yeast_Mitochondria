@@ -45,9 +45,13 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 
 **Using**: Open macro file "MITO_CELL_BASED_ANALYSIS.ijm", press Run and Open dialog appears. Choose "alpha_WT_control_DIC_02.tif" file, press OK. Macro opens other files, i.e. "alpha_WT_control_pro_02.tif" and "alpha_WT_control_SEG_02.tif" and runs the morfological analysis of mitochondria individually for all yeast cells. All results are then stored in the directory where "alpha_WT_control_DIC_02.tif" is placed. Open resulting CSV files by Excel and use semicolon as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
 
-### Computation of Branching and Filamentous Factors from the numerical results coming from the "MITO_CELL_BASED_ANALYSIS.ijm"
+### Computation of Branching and Filamentous Factors from numerical results from "MITO_CELL_BASED_ANALYSIS.ijm"
 
-???
+Branching Factor = SUMA of all branch points of skeletons in the image / SUMA of all end points of skeleton in the image.
+
+It is evaluated for the whole image of segmented mitochondria using resulting "*-Branching-Factor.CSV" file. Apply summing all values in column C-Junctions (=branch points), the same in column D-End-point voxels (=end points) and compute the value. The higher Branching Factor, the higher richness and the mutual interconnection of mitochondria; the lower Branching Factor, the shorter and separated mitochondria in the image.
+
+Filamentous Factor = ...
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
@@ -55,7 +59,7 @@ Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 Fig. 2: Fluorescence images of mitochondria **segmented** by global thresholding, using "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", (thresholds applied: left=4, right=13):
 ![GlobThresh-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/b8bbfd60-1801-4afb-8544-99fadbb0f552)
 
-Fig. 3: Fluorescence images of mitochondria **segmented** by the retrained model *(Model...)* of [MitoSegNet](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8):
+Fig. 3: Fluorescence images of mitochondria **segmented** by the retrained model of [MitoSegNet](https://www.cell.com/iscience/fulltext/S2589-0042(20)30793-8):
 ![MitoSegNet-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/1d5e7f21-1311-4fee-9c70-5adfa75cf7e8)
 
 Fig. 4: [Local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) images created from data segmented by MitoSegNet, see Fig. 3 :
