@@ -64,7 +64,7 @@ Apply summing all values in the column B-Branches, the same for C-Junctions (=br
 
 ### Comments to dead cells
 
-In DIC images, occasional occurrences of dead cells are also observed, which could potentially adversely affect the analysis. These cells are identifiable as darker objects, as seen in Fig. 6. In fluorescence images, corresponding objects exhibit shapes resembling the original cells but with lower intensity and without recognized mitochondria. Segmentation based on deep learning do not detect these shapes, as it is not trained for them. Similarly, segmentation based on global thresholding avoids them, given that the average intensities of these cells fall below the chosen threshold. Consequently, images of dead cells are thus excluded from the analysis.
+In DIC images, occasional occurrences of dead cells are also observed, which could potentially adversely affect the analysis. These cells are identifiable as darker objects, as seen in Fig. 6. In fluorescence images, corresponding objects exhibit shapes resembling the original cells but with lower intensity and without recognized mitochondria. Segmentation based on deep learning does not detect these shapes, as it is not trained for them. Similarly, segmentation based on global thresholding avoids them, given that the average intensities of these cells fall below the chosen threshold. Consequently, images of dead cells are thus excluded from the analysis.
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
