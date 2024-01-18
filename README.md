@@ -44,7 +44,13 @@ Two **parameters** here are firstly, "*noiseSizeInPixels*", i.e. after global th
 
 **Parameters** are here *strings* defining the above mentioned naming convention and *image calibration*.
 
-**Using**: Open macro file "MITO_CELL_BASED_ANALYSIS.ijm", press Run and Open dialog appears. Choose "alpha_WT_control_DIC_02.tif" file, press OK. Macro opens other files, i.e. "alpha_WT_control_pro_02.tif" and "alpha_WT_control_SEG_02.tif" and runs the morfological analysis of mitochondria individually for all yeast cells. All results are then stored in the directory where "alpha_WT_control_DIC_02.tif" is placed. Open resulting CSV files by Excel and use semicolon as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
+**Using**: Open macro file "MITO_CELL_BASED_ANALYSIS.ijm", press Run and Open dialog appears. Choose "alpha_WT_control_DIC_02.tif" file, press OK. Macro opens other files, i.e. "alpha_WT_control_pro_02.tif" and "alpha_WT_control_SEG_02.tif" and runs the morfological analysis of mitochondria individually for all yeast cells. All results are then stored in the directory where "alpha_WT_control_DIC_02.tif" is placed. Open resulting CSV files by Excel and use comma as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
+
+#### MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm
+
+**Parameters** are *image calibration* values.
+
+**Using**: Open a segmented picture, "alpha_WT_control_SEG_02.tif", then macro file "MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm" and press Run. All results are then stored in the directory where the segmented picture is placed. Open resulting CSV files by Excel and use comma as a separator.
 
 ### Computation of Branching and Filamentous Factors from numerical results from "MITO_CELL_BASED_ANALYSIS.ijm"
 
