@@ -28,13 +28,13 @@ General naming convention of our images:
 - Experiment Name_pro_number.tif = fluorescence image with mitochondria;
 - Experiment Name_SEG_number.tif = segmented mitochondria image; 
 
-#### MITO_MULTI_GLOBAL_THRESHOLDING.ijm
+#### -- MITO_MULTI_GLOBAL_THRESHOLDING.ijm
 
 Two **parameters** here are applied here, firstly, "*noiseSizeInPixels*", i.e. after global thresholding objects having sizes smaller and equal to this number are removed from the picture. Secondly, "*numThresh*" is number of consecutive global thresholds applied to the fluorescence image.
 
 **Using**: Open image file "alpha_WT_control_pro_02.tif" in Fiji, then open macro file "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", press Run and "numThresh" images will be created in the directory where "alpha_WT_control_pro_02.tif" is placed. Preprocessed version of the input image is also stored with the suffix "-MITOS-ENH.tif". The chosen binary image renamed according to the above mentioned convention can enter the following analysis.
 
-#### MITO_CELL_BASED_ANALYSIS.ijm
+#### -- MITO_CELL_BASED_ANALYSIS.ijm
 
 ##### Prerequisities:
 
@@ -46,7 +46,7 @@ Two **parameters** here are applied here, firstly, "*noiseSizeInPixels*", i.e. a
 
 **Using**: Open macro file "MITO_CELL_BASED_ANALYSIS.ijm", press Run and Open dialog appears. Choose "alpha_WT_control_DIC_02.tif" file, press OK. Macro opens other files, i.e. "alpha_WT_control_pro_02.tif" and "alpha_WT_control_SEG_02.tif" and runs the morfological analysis of mitochondria individually for all yeast cells. All results are then stored in the directory where "alpha_WT_control_DIC_02.tif" is placed. Open resulting CSV files by Excel and use comma as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
 
-#### MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm
+#### -- MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm
 
 **Parameters** are *image calibration* values.
 
