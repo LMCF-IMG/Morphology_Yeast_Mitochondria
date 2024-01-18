@@ -62,7 +62,7 @@ It is evaluated for the whole image of segmented mitochondria using resulting "*
 
 Apply summing all values in the column B-Branches, the same for C-Junctions (=branch points) and for D-End-point voxels (=end points) and compute the value. The higher the Filamentous Factor, the more connected filaments the mitochondria network has got.
 
-#### Comments to dead cells
+### Comments to dead cells
 
 In DIC images, occasional occurrences of dead cells are also observed, which could potentially adversely affect the analysis. These cells are identifiable as darker objects, as seen in Fig. 6. In fluorescence images, corresponding objects exhibit shapes resembling the original cells but with lower intensity and without recognized mitochondria. Segmentation based on deep learning do not detect these shapes, as it is not trained for them. Similarly, segmentation based on global thresholding avoids them, given that the average intensities of these cells fall below the chosen threshold. Consequently, images of dead cells are thus excluded from the analysis.
 
