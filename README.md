@@ -53,13 +53,7 @@ For practical experimentation, a triplet of images (mitochondria, MitoSegNet seg
 
 [Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
 
-
-
-
-
-### Short description
-
-### Computation of Branching and Filamentous Factors from numerical results from "MITO_CELL_BASED_ANALYSIS.ijm"
+### Computation of Branching and Filamentous Factors"
 
 **Branching Factor** = the SUM of all branch points per skeleton / the SUM of all end points per skeleton.
 
@@ -69,9 +63,9 @@ It is evaluated for the whole image of segmented mitochondria using resulting "*
 
 Apply summing all values in the column B-Branches, the same for C-Junctions (=branch points) and for D-End-point voxels (=end points) and compute the value. The higher the Filamentous Factor, the more connected filaments the mitochondria network has got.
 
-### Comments to dead cells
+### Comments on Dead Cells
 
-In DIC images, occasional occurrences of dead cells are also observed, which could potentially adversely affect the analysis. These cells are identifiable as darker objects, as seen in Fig. 6. In fluorescence images, corresponding objects exhibit shapes resembling the original cells but with lower intensity and without recognized mitochondria. Segmentation based on deep learning does not detect these shapes, as it is not trained for them. Similarly, segmentation based on global thresholding avoids them, given that the average intensities of these cells fall below the chosen threshold. Consequently, images of dead cells are thus excluded from the analysis.
+In DIC images, occasional dead cells are observed, potentially impacting the analysis. These cells appear as darker objects (**Fig. 6**). In fluorescence images, similar objects mimic the original cells but with reduced intensity and lacking recognized mitochondria. Deep learning-based segmentation and global thresholding both fail to detect these shapes due to lack of training or intensity below the threshold. As a result, images containing dead cells are excluded from the analysis.
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
