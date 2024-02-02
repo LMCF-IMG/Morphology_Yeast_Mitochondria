@@ -1,7 +1,31 @@
 # Morphology_Yeast_Mitochondria
-Analysis of morphology of control and H2O2-treated *mitochondria* in images acquired by a widefield fluorescence microscope (WF) to distinguish differences between a wildtype strain (WT) (both control and H2O2-treated) and a mutant strain the experiments (both control and H2O2-treated as well). The analysis was done with and the pictures were created and provided by Dr. Jana Vojtová, [Laboratory of Cell Reproduction, Institute of Microbiology of the Czech Academy of Sciences, Prague, Czech Republic](https://mbucas.cz/en/research/biology-of-the-cell-and-bioinformatics/laboratory-of-cell-reproduction/))
+
+Analysis of Mitochondrial Morphology Using Widefield Fluorescence Microscopy and Image Processing Macros
 
 **Macros for [ImageJ/Fiji](https://fiji.sc/).**
+
+### Introduction
+
+This study entails a meticulous examination of the morphology of control and H2O2-treated mitochondria, employing images acquired through a widefield fluorescence microscope (WF). The primary objective is to discern disparities between a wildtype strain (WT) under both control and H2O2-treated conditions and a mutant strain subjected to the same experimental variations. Dr. Jana Vojtová from the [Laboratory of Cell Reproduction, Institute of Microbiology of the Czech Academy of Sciences, Prague, Czech Republic](https://mbucas.cz/en/research/biology-of-the-cell-and-bioinformatics/laboratory-of-cell-reproduction/)) cooperated with the analysis and provided the images.
+
+### Instrumentation and Imaging Modalities
+
+The Olympus IX-71 inverted microscope equipped with a 100x PlanApochromat objective (NA 1.4) was utilized for imaging both fluorescence and Nomarski Differential Interference Contrast (DIC) modalities. The GFP filter block was employed for fluorescence imaging (exc. 488 nm/em. 507 nm).
+
+### Image Processing Macros
+
+Three distinct macros were developed for ImageJ/Fiji to process the acquired images:
+
+
+
+
+
+
+
+
+
+
+
 
 ### Short description
 
