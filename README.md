@@ -45,7 +45,8 @@ For practical experimentation, a triplet of images (mitochondria, MitoSegNet seg
 [Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
 
 ### Macro Usage Instructions:
-    - MITO_MULTI_GLOBAL_THRESHOLDING.ijm: Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version will be saved in the same directory.
+
+    - MITO_MULTI_GLOBAL_THRESHOLDING.ijm: Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version     will be saved in the same directory.
     - MITO_CELL_BASED_ANALYSIS.ijm: Requires Anaconda installation, Cellpose environment creation, and Cellpose wrapper for Fiji installation. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image.
     - MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm: Open a segmented picture ("alpha_WT_control_SEG_02.tif"), then run the macro. Results are saved in the directory of the segmented picture.
 
