@@ -49,7 +49,7 @@ Naming convention of our images:
 
 Mitochondrial segmentation was conducted using two different methods: global thresholding (**Fig. 2**) and [MitoSegNet](https://github.com/mitosegnet) (**Fig. 3**). The purpose was to showcase the advantages of deep learning for precise mitochondrial segmentation. However, the original MitoSegNet model did not entirely succeed with the provided images, prompting the annotation and retraining of the model.
 
-For practical experimentation, a triplet of images (mitochondria, MitoSegNet segmentation, and DIC) is attached to the webpage. Both macros for global thresholding and subsequent mitochondrial analysis are available for testing. Additionally, the retrained MitoSegNet model is provided:
+For practical experimentation, a triplet of images (mitochondria, MitoSegNet segmentation, and DIC) is attached to the webpage. All macros for global thresholding and subsequent mitochondrial analyses are available for testing. Additionally, the retrained MitoSegNet model is provided:
 
 [Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
 
