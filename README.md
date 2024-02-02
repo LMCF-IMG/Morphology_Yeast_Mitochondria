@@ -36,23 +36,23 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image.
     - Results, including an image with numbered outlines of mitochondria and a CSV file containing their parameters, are saved in the same directory.
 
- 
-  
+### Comparison of Segmentation Methods:
 
+Mitochondrial segmentation was conducted using two different methods: global thresholding (**Fig. 2**) and [MitoSegNet](https://github.com/mitosegnet) (**Fig. 3**). The purpose was to showcase the advantages of deep learning for precise mitochondrial segmentation. However, the original MitoSegNet model did not entirely succeed with the provided images, prompting the annotation and retraining of the model.
 
+For practical experimentation, a triplet of images (mitochondria, MitoSegNet segmentation, and DIC) is attached to the webpage. Both macros for global thresholding and subsequent mitochondrial analysis are available for testing. Additionally, the retrained MitoSegNet model is provided:
+
+[Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
+
+### Macro Usage Instructions:
+    - MITO_MULTI_GLOBAL_THRESHOLDING.ijm: Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version will be saved in the same directory.
+    - MITO_CELL_BASED_ANALYSIS.ijm: Requires Anaconda installation, Cellpose environment creation, and Cellpose wrapper for Fiji installation. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image.
+    - MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm: Open a segmented picture ("alpha_WT_control_SEG_02.tif"), then run the macro. Results are saved in the directory of the segmented picture.
 
 
 
 
 ### Short description
-
--  **The third, straightforward macro**, "MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm", operates by opening a segmented image in Fiji (containing the "SEG" string according to the convention specified below). The corresponding fluorescence image (with the "pro" string) must be in the same directory. The macro also opens it and performs an analysis of the intensities of individual mitochondria and their morphological characteristics. The results, saved to the disk in the same directory, include an image with numbered outlines of mitochondria and a CSV file containing their parameters. In the image, the mitochondria's numbers correspond to their indices in the table, listing area, average, minimum and maximum intensity, perimeter, length of the major and minor axes of the circumscribed ellipse, their angle, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity. In this case, however, the analysis is conducted collectively on the entire image and is not referenced to individual yeast cells.
-
-For comparison, we **segmented mitochondria using two different methods, Fig. 2-3**. The first method involved global thresholding, "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", as shown in Fig. 2, while the second method utilized [MitoSegNet](https://github.com/mitosegnet), Fig. 3. The aim was to demonstrate the advantages of deep learning for more precise mitochondrial segmentation. However, the original model of the MitoSegNet project did not entirely succeed with our images. Therefore, we annotated our images and retrained the model, see the link below.
-
-A triplet of images (mitochondria, their segmentation by MitoSegNet and DIC) for testing purposes is attached to this webpage. It is thus possible to practically try out both the attached macros for global thresholding and subsequent mitochondrial analysis, respectively. In case you wish to experiment with thresholding mitochondria using [MitoSegNet](https://github.com/mitosegnet), which offers a comprehensive application for mitochondrial segmentation, the retrained model is also available:
-
-[Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
 
 ### Comments to macros attached
 
