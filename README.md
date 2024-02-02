@@ -55,11 +55,11 @@ For practical experimentation, a triplet of images (mitochondria, MitoSegNet seg
 
 ### Computation of Branching and Filamentous Factors
 
-**Branching Factor** = the SUM of all branch points per skeleton / the SUM of all end points per skeleton.
+- **Branching Factor** = the SUM of all branch points per skeleton / the SUM of all end points per skeleton.
 
 It is evaluated for the whole image of segmented mitochondria using resulting "*-Branching-Factor.CSV" file. Apply summing all values in the column C-Junctions (=branch points), the same in the column D-End-point voxels (=end points) and compute the value. The higher the Branching Factor, the higher richness and mutual interconnections of mitochondria; the lower the Branching Factor, the shorter and more separated mitochondria in the image.
 
-**Filamentous Factor** = (the SUM of all branch points per skeleton + the SUM of branches per skeleton) / the SUM of all end points per skeleton.
+- **Filamentous Factor** = (the SUM of all branch points per skeleton + the SUM of branches per skeleton) / the SUM of all end points per skeleton.
 
 Apply summing all values in the column B-Branches, the same for C-Junctions (=branch points) and for D-End-point voxels (=end points) and compute the value. The higher the Filamentous Factor, the more connected filaments the mitochondria network has got.
 
