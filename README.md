@@ -53,7 +53,7 @@ For practical experimentation, a triplet of images (mitochondria, MitoSegNet seg
 
 [Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
 
-### Computation of Branching and Filamentous Factors"
+### Computation of Branching and Filamentous Factors
 
 **Branching Factor** = the SUM of all branch points per skeleton / the SUM of all end points per skeleton.
 
@@ -66,6 +66,8 @@ Apply summing all values in the column B-Branches, the same for C-Junctions (=br
 ### Comments on Dead Cells
 
 In DIC images, occasional dead cells are observed, potentially impacting the analysis. These cells appear as darker objects (**Fig. 6**). In fluorescence images, similar objects mimic the original cells but with reduced intensity and lacking recognized mitochondria. Deep learning-based segmentation and global thresholding both fail to detect these shapes due to lack of training or intensity below the threshold. As a result, images containing dead cells are excluded from the analysis.
+
+### Images
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
 ![Fluo-WILD-Pair](https://github.com/LMCF-IMG/Morphology_Yeast_Mitochondria/assets/63607289/0dbbf106-dc14-40f9-930c-456b582716d5)
