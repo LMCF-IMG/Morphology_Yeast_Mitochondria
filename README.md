@@ -25,7 +25,7 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
 1. **MITO_CELL_BASED_ANALYSIS.ijm:**
 
     - This macro utilizes fluorescent images, mitochondrial segmentation, and corresponding DIC images (**Fig. 6**). DIC images are used to relate segmented mitochondria and their parameters to individual cells.
-    - Processes the segmented image with [local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) analysis and [skeletonization](https://imagej.net/plugins/skeletonize3d) (**Fig. 5**) to determine mitochondrial thickness (**Fig. 4**), lengths, branching, [Branching Factor](https://www.tandfonline.com/doi/full/10.3109/01913123.2015.1054013), and Filamentous Factor, see below.
+    - Processes the segmented image with [local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) (**Fig. 4**) analysis and [skeletonization](https://imagej.net/plugins/skeletonize3d) (**Fig. 5**) to determine mitochondrial thickness, lengths, branching, [Branching Factor](https://www.tandfonline.com/doi/full/10.3109/01913123.2015.1054013), and Filamentous Factor, see below.
     - Segments yeast cells using the [Cellpose](https://github.com/MouseLand/cellpose) (**Fig. 7**) method and generates stacks containing segmentation, skeletons, and local thickness for each cell.
     - Various measurements are taken for individual mitochondria in each cell, including length, average thickness, intensity, mitochondrial area, circularity, and cell area.
     - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification (Fig. 4-7).
