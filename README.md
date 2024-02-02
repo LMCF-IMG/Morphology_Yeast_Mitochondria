@@ -6,7 +6,7 @@ Analysis of Mitochondrial Morphology Using Widefield Fluorescence Microscopy and
 
 ### Introduction
 
-This study entails a meticulous examination of the morphology of control and H2O2-treated mitochondria, employing images acquired through a widefield fluorescence microscope (WF). The primary objective is to discern disparities between a wildtype strain (WT) under both control and H2O2-treated conditions and a mutant strain subjected to the same experimental variations. Dr. Jana Vojtová from the [Laboratory of Cell Reproduction, Institute of Microbiology of the Czech Academy of Sciences, Prague, Czech Republic](https://mbucas.cz/en/research/biology-of-the-cell-and-bioinformatics/laboratory-of-cell-reproduction/)) cooperated with the analysis and provided the images.
+The examination involves assessing the morphology of tubular (control) and spherical (hydrogen peroxide treated) mitochondria in the yeast Saccharomyces cerevisiae, utilizing wide-field fluorescence images. Mitochondria were labeled with mitochondria-targeted green fluorescent protein (mtGFP). For segmentation, either the MITO_MULTI_GLOBAL_THRESHOLDING.ijm macro or a retrained deep learning model, MitoSegNet, specifically adapted for yeast cells, can be employed. Subsequent analysis of mitochondria morphology can be conducted using two macros: MITO_CELL_BASED_ANALYSIS.ijm and MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm. Dr. Jana Vojtová from the [Laboratory of Cell Reproduction, Institute of Microbiology of the Czech Academy of Sciences, Prague, Czech Republic](https://mbucas.cz/en/research/biology-of-the-cell-and-bioinformatics/laboratory-of-cell-reproduction/)) cooperated with the analysis and provided the images.
 
 ### Instrumentation and Imaging Modalities
 
