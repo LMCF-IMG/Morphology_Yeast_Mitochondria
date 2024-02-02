@@ -21,12 +21,16 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - This macro preprocesses fluorescence images (**Fig. 1**) using [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background), outlier elimination, grayscale and binary morphology, and [Tubeness](https://www.longair.net/edinburgh/imagej/tubeness/) for enhanced visualization of mitochondrial filamentous structures.
     - A global thresholding method with predefined thresholds is applied, followed by the elimination of small objects using a particle analyzer.
     - The optimal segmented image is chosen by an expert based on appropriate thresholds (**Fig. 2**).
+
+1. **MITO_CELL_BASED_ANALYSIS.ijm:**
+
+    - This macro utilizes fluorescent images, mitochondrial segmentation, and corresponding DIC images (**Fig. 6**). DIC images are used to relate segmented mitochondria and their parameters to individual cells.
+    - Processes the segmented image with [local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) analysis and [skeletonization](https://imagej.net/plugins/skeletonize3d) (**Fig. 5**) to determine mitochondrial thickness (**Fig. 4**), lengths, branching, [Branching Factor](https://www.tandfonline.com/doi/full/10.3109/01913123.2015.1054013), and Filamentous Factor, see below.
+    - Segments yeast cells using the [Cellpose](https://github.com/MouseLand/cellpose) (**Fig. 7**) method and generates stacks containing segmentation, skeletons, and local thickness for each cell.
+    - Various measurements are taken for individual mitochondria in each cell, including length, average thickness, intensity, mitochondrial area, circularity, and cell area.
+    - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification (Fig. 4-7).
+ 
   
-
-
-
-
-
 
 
 
@@ -35,13 +39,6 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
 
 ### Short description
 
-Two images are **inputs** to the analysis: 1. fluorescence image of mitochondria - **Fig. 1**; 2. DIC image of corresponding yeast cells of the same field of view - **Fig. 6**. DIC images are used to relate segmented mitochondria and their parameters to individual cells.
-
-A **microscope** used for the acquisition of both modalities: Olympus IX-71 inverted microscope with a 100x PlanApochromat objective (NA 1.4), GFP filter block exc. 488 nm/em. 507 nm; Nomarski Differential Interference Contrast (DIC) mode.
-
-We have developed **three macros** for processing the images.
-
-- **The first macro**, "MITO_MULTI_GLOBAL_THRESHOLDING.ijm", preprocesses fluorescence images using [(Subtract background)](https://imagejdocu.list.lu/gui/process/subtract_background), eliminating outliers, applying grayscale and binary morphology to reduce data inhomogeneity, and [Tubeness](https://www.longair.net/edinburgh/imagej/tubeness/) to enhance the visualization quality of filamentous structures (mitochondria). Subsequently, a global thresholding method with a predefined range of thresholds is applied to the image, and a particle analyzer is utilized to eliminate small resulting objects. The best segmented image with an appropriate threshold is then selected by an expert, see **Fig. 2** (thresholds applied: left=4, right=13).
 -  As an entry into **the second macro**, "MITO_CELL_BASED_ANALYSIS.ijm", fluorescent images with mitochondria, their segmentation, and corresponding DIC images are utilized. The segmented image undergoes two processes: the application of [Local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness), **Fig. 4**, to determine the thickness of mitochondria and [skeletonization](https://imagej.net/plugins/skeletonize3d), **Fig. 5**, to ascertain the lengths, branching, and determination of [Branching Factor](https://www.tandfonline.com/doi/full/10.3109/01913123.2015.1054013) and Filamentous Factor of the mitochondria. Subsequently, the image of yeast cells from DIC is segmented using the [Cellpose](https://github.com/MouseLand/cellpose) method, **Fig. 7**, individual cell masks are created, and from these, stacks are generated containing segmentation, skeletons, and local thickness of these cells. Using these stacks, measurements are taken for the lengths of all mitochondria in each cell, their average thickness, average intensity, mitochondrial area, circularity, and cell area. All supporting images, i.e., resulting Cellpose segmentation, generated masks, and stacks with local thickness, skeletons, and mitochondrial segmentation, created as TIF files, and numerical results, i.e., the skeleton analysis result for calculating the Branching and Filamentous Factor and the morphological analysis result of all cells, created as CSV files, are finally saved to disk for verification.
 -  **The third, straightforward macro**, "MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm", operates by opening a segmented image in Fiji (containing the "SEG" string according to the convention specified below). The corresponding fluorescence image (with the "pro" string) must be in the same directory. The macro also opens it and performs an analysis of the intensities of individual mitochondria and their morphological characteristics. The results, saved to the disk in the same directory, include an image with numbered outlines of mitochondria and a CSV file containing their parameters. In the image, the mitochondria's numbers correspond to their indices in the table, listing area, average, minimum and maximum intensity, perimeter, length of the major and minor axes of the circumscribed ellipse, their angle, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity. In this case, however, the analysis is conducted collectively on the entire image and is not referenced to individual yeast cells.
 
