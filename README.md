@@ -32,9 +32,9 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
 
 1.	**MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm:**
 
-  	    - This macro operates by opening a segmented image in Fiji containing the "SEG" string and its corresponding fluorescence image with the "pro" string in the same directory.
-        - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image.
-        - Results, including an image with numbered outlines of mitochondria and a CSV file containing their parameters, are saved in the same directory.
+    - This macro operates by opening a segmented image in Fiji containing the "SEG" string and its corresponding fluorescence image with the "pro" string in the same directory.
+    - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image.
+    - Results, including an image with numbered outlines of mitochondria and a CSV file containing their parameters, are saved in the same directory.
 
  
   
