@@ -40,7 +40,7 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - Results, including an image with numbered outlines of mitochondria and a CSV file containing their parameters, are saved in the same directory.
     - Usage: Open a segmented picture ("alpha_WT_control_SEG_02.tif"), then run the macro. Results are saved in the directory of the segmented picture.
 
-General naming convention of our images:
+Naming convention of our images:
 - Experiment Name_DIC_number.tif = DIC image;
 - Experiment Name_pro_number.tif = fluorescence image with mitochondria;
 - Experiment Name_SEG_number.tif = segmented mitochondria image; 
