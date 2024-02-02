@@ -19,7 +19,9 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
 1. **MITO_MULTI_GLOBAL_THRESHOLDING.ijm:**
 
   o	This macro preprocesses fluorescence images using background subtraction, outlier elimination, grayscale and binary morphology, and Tubeness for enhanced visualization of mitochondrial filamentous structures.
+  
   o	A global thresholding method with predefined thresholds is applied, followed by the elimination of small objects using a particle analyzer.
+  
   o	The optimal segmented image is chosen by an expert based on appropriate thresholds (Fig. 2).
 
 
