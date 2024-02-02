@@ -21,7 +21,7 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - This macro preprocesses fluorescence images (**Fig. 1**) using [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background), outlier elimination, grayscale and binary morphology, and [Tubeness](https://www.longair.net/edinburgh/imagej/tubeness/) for enhanced visualization of mitochondrial filamentous structures.
     - A global thresholding method with predefined thresholds is applied, followed by the elimination of small objects using a [particle analyzer](https://imagej.net/imaging/particle-analysis).
     - The optimal segmented image is chosen by an expert based on appropriate thresholds (**Fig. 2**).
-    - Usage: Two **parameters** are applied, firstly, "*noiseSizeInPixels*", i.e. after global thresholding objects having sizes smaller and equal to this number are removed from the picture. Secondly, "*numThresh*" is number of consecutive global thresholds applied to the fluorescence image. Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version will be saved in the same directory.
+    - *Usage*: Two **parameters** are applied, firstly, "*noiseSizeInPixels*", i.e. after global thresholding objects having sizes smaller and equal to this number are removed from the picture. Secondly, "*numThresh*" is number of consecutive global thresholds applied to the fluorescence image. Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version will be saved in the same directory.
 
 
 2. **MITO_CELL_BASED_ANALYSIS.ijm:**
@@ -31,14 +31,14 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - Segments yeast cells using the [Cellpose](https://github.com/MouseLand/cellpose) (**Fig. 7**) method and generates stacks containing segmentation, skeletons, and local thickness for each cell.
     - Various measurements are taken for individual mitochondria in each cell, including length, average thickness, intensity, mitochondrial area, circularity, and cell area.
     - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification.
-    - Usage: Requires [Anaconda](https://www.anaconda.com/) installation, [Cellpose](https://github.com/MouseLand/cellpose) environment creation, and [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installation. **Parameters** are here *strings* defining the below mentioned naming convention and *image calibration*. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image. When opening resulting CSV files by Excel, use comma as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
+    - *Usage*: Requires [Anaconda](https://www.anaconda.com/) installation, [Cellpose](https://github.com/MouseLand/cellpose) environment creation, and [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installation. **Parameters** are here *strings* defining the below mentioned naming convention and *image calibration*. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image. When opening resulting CSV files by Excel, use comma as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
     
 3.	**MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm:**
 
     - This macro operates by opening a segmented image in Fiji containing the "SEG" string and its corresponding fluorescence image with the "pro" string in the same directory.
     - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image.
     - Results, including an image with numbered outlines of mitochondria and a CSV file containing their parameters, are saved in the same directory.
-    - Usage: **Parameters** are *image calibration* values. Open a segmented picture ("alpha_WT_control_SEG_02.tif"), then run the macro. Results are saved in the directory of the segmented picture.
+    - *Usage*: **Parameters** are *image calibration* values. Open a segmented picture ("alpha_WT_control_SEG_02.tif"), then run the macro. Results are saved in the directory of the segmented picture.
 
 Naming convention of our images:
 - Experiment Name_DIC_number.tif = DIC image;
