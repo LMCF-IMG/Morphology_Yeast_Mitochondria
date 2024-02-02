@@ -21,20 +21,29 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - This macro preprocesses fluorescence images (**Fig. 1**) using [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background), outlier elimination, grayscale and binary morphology, and [Tubeness](https://www.longair.net/edinburgh/imagej/tubeness/) for enhanced visualization of mitochondrial filamentous structures.
     - A global thresholding method with predefined thresholds is applied, followed by the elimination of small objects using a particle analyzer.
     - The optimal segmented image is chosen by an expert based on appropriate thresholds (**Fig. 2**).
+    - Usage: Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version will be saved in the same directory.
 
-1. **MITO_CELL_BASED_ANALYSIS.ijm:**
+
+2. **MITO_CELL_BASED_ANALYSIS.ijm:**
 
     - This macro utilizes fluorescent images, mitochondrial segmentation, and corresponding DIC images (**Fig. 6**). DIC images are used to relate segmented mitochondria and their parameters to individual cells.
     - Processes the segmented image with [local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) (**Fig. 4**) analysis and [skeletonization](https://imagej.net/plugins/skeletonize3d) (**Fig. 5**) to determine mitochondrial thickness, lengths, branching, [Branching Factor](https://www.tandfonline.com/doi/full/10.3109/01913123.2015.1054013), and Filamentous Factor, see below.
     - Segments yeast cells using the [Cellpose](https://github.com/MouseLand/cellpose) (**Fig. 7**) method and generates stacks containing segmentation, skeletons, and local thickness for each cell.
     - Various measurements are taken for individual mitochondria in each cell, including length, average thickness, intensity, mitochondrial area, circularity, and cell area.
     - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification.
-
-1.	**MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm:**
+    - Usage: Requires [Anaconda](https://www.anaconda.com/) installation, [Cellpose](https://github.com/MouseLand/cellpose) environment creation, and [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installation. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image.
+    
+3.	**MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm:**
 
     - This macro operates by opening a segmented image in Fiji containing the "SEG" string and its corresponding fluorescence image with the "pro" string in the same directory.
     - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image.
     - Results, including an image with numbered outlines of mitochondria and a CSV file containing their parameters, are saved in the same directory.
+    - Usage: Open a segmented picture ("alpha_WT_control_SEG_02.tif"), then run the macro. Results are saved in the directory of the segmented picture.
+
+General naming convention of our images:
+- Experiment Name_DIC_number.tif = DIC image;
+- Experiment Name_pro_number.tif = fluorescence image with mitochondria;
+- Experiment Name_SEG_number.tif = segmented mitochondria image; 
 
 ### Comparison of Segmentation Methods:
 
@@ -44,11 +53,6 @@ For practical experimentation, a triplet of images (mitochondria, MitoSegNet seg
 
 [Link to the retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355MB.
 
-### Macro Usage Instructions:
-
-    - MITO_MULTI_GLOBAL_THRESHOLDING.ijm: Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version     will be saved in the same directory.
-    - MITO_CELL_BASED_ANALYSIS.ijm: Requires Anaconda installation, Cellpose environment creation, and Cellpose wrapper for Fiji installation. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image.
-    - MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm: Open a segmented picture ("alpha_WT_control_SEG_02.tif"), then run the macro. Results are saved in the directory of the segmented picture.
 
 
 
