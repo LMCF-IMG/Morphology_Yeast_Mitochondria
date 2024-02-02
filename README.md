@@ -29,6 +29,13 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - Segments yeast cells using the [Cellpose](https://github.com/MouseLand/cellpose) (**Fig. 7**) method and generates stacks containing segmentation, skeletons, and local thickness for each cell.
     - Various measurements are taken for individual mitochondria in each cell, including length, average thickness, intensity, mitochondrial area, circularity, and cell area.
     - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification.
+
+1.	**MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm:**
+
+  	    - This macro operates by opening a segmented image in Fiji containing the "SEG" string and its corresponding fluorescence image with the "pro" string in the same directory.
+        - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image.
+        - Results, including an image with numbered outlines of mitochondria and a CSV file containing their parameters, are saved in the same directory.
+
  
   
 
