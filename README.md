@@ -6,7 +6,7 @@ Analysis of Mitochondrial Morphology Using Widefield Fluorescence Microscopy and
 
 ### Introduction
 
-The examination of the morphology of tubular (control) and spherical (hydrogen peroxide treated) mitochondria in the yeast *Saccharomyces cerevisiae*, utilizing wide-field fluorescence images. Mitochondria were labeled with mitochondria-targeted green fluorescent protein (mtGFP). For segmentation, either the MITO_MULTI_GLOBAL_THRESHOLDING.ijm macro or a retrained deep learning model, MitoSegNet, specifically adapted for yeast cells, can be employed. Subsequent analyses of mitochondria morphology can be conducted using two macros: MITO_CELL_BASED_ANALYSIS.ijm and MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm. Dr. Jana Vojtová from the [Laboratory of Cell Reproduction, Institute of Microbiology of the Czech Academy of Sciences, Prague, Czech Republic](https://mbucas.cz/en/research/biology-of-the-cell-and-bioinformatics/laboratory-of-cell-reproduction/)) cooperated with the analyses and provided the images.
+The examination of the morphology of tubular (control) and spherical (hydrogen peroxide treated) mitochondria in the yeast *Saccharomyces cerevisiae*, utilizing wide-field fluorescence images. Mitochondria were labeled with mitochondria-targeted green fluorescent protein (mtGFP). For segmentation, either the MITO_MULTI_GLOBAL_THRESHOLDING.ijm macro or a retrained deep learning model, MitoSegNet, specifically adapted for yeast cells, can be employed. Subsequent analyses of mitochondria morphology can be conducted using two macros: MITO_CELL_BASED_ANALYSIS.ijm and MITO_FRAGMENT_BASED_ANALYSIS.ijm. Dr. Jana Vojtová from the [Laboratory of Cell Reproduction, Institute of Microbiology of the Czech Academy of Sciences, Prague, Czech Republic](https://mbucas.cz/en/research/biology-of-the-cell-and-bioinformatics/laboratory-of-cell-reproduction/)) cooperated with the analyses and provided the images.
 
 ### Instrumentation and Imaging Modalities
 
@@ -33,7 +33,7 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification.
     - Usage: Requires [Anaconda](https://www.anaconda.com/) installation, [Cellpose](https://github.com/MouseLand/cellpose) environment creation, and [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installation. **Parameters** are here *strings* defining the below mentioned naming convention and *image calibration*. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image. When opening resulting CSV files by Excel, use comma as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
     
-3.	**MITO_IMAGE_BASED_SHAPES_INTENSITIES.ijm:**
+3.	**MITO_FRAGMENT_BASED_ANALYSIS.ijm:**
 
     - This macro operates by opening a segmented image in Fiji containing the "SEG" string and its corresponding fluorescence image with the "pro" string in the same directory.
     - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image.
