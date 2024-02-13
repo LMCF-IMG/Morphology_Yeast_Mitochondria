@@ -51,6 +51,8 @@ Mitochondrial segmentation was conducted using two different methods: global thr
 
 For practical experimentation, a triplet of images (mitochondria, MitoSegNet segmentation, and DIC) is attached to the webpage. All macros for global thresholding and subsequent mitochondrial analyses are available for testing. Additionally, the [retrained MitoSegNet model](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5), cca 355 MB, is provided.
 
+You may find the corresponding program MitoS for mitochondria segmentation that can use this model [here](https://github.com/MitoSegNet/MitoS-segmentation-tool).
+
 ### Computation of Branching and Filamentous Factors
 
 - **Branching Factor** = the SUM of all branch points per skeleton / the SUM of all end points per skeleton.
