@@ -25,9 +25,9 @@ Four distinct macros were developed for ImageJ/Fiji to process the acquired imag
 
 2. **MITO_PREPROCESSING.ijm:**
 
-   - This macro preprocesses fluorescence images (**Fig. 1**) very simply to make subsequent segmentation of mitochondrial fragments easier using just [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background) and outlier elimination.
+   - This macro preprocesses fluorescence images (**Fig. 1**) to make subsequent segmentation of mitochondrial fragments  using [MitoSegNet](https://github.com/mitosegnet) easier. It applies simply [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background) and outlier elimination.
 
-4. **MITO_CELL_BASED_ANALYSIS.ijm:**
+3. **MITO_CELL_BASED_ANALYSIS.ijm:**
 
     - This macro utilizes fluorescent images, mitochondrial segmentation, and corresponding DIC images (**Fig. 6**). DIC images are used to relate segmented mitochondria and their parameters to individual cells.
     - Processes the segmented image with [local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) (**Fig. 4**) analysis and [skeletonization](https://imagej.net/plugins/skeletonize3d) (**Fig. 5**) to determine mitochondrial thickness, lengths, branching, [Branching Factor](https://www.tandfonline.com/doi/full/10.3109/01913123.2015.1054013), and Filamentous Factor, see also below.
@@ -36,7 +36,7 @@ Four distinct macros were developed for ImageJ/Fiji to process the acquired imag
     - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification.
     - Usage: Requires [Anaconda](https://www.anaconda.com/) installation, [Cellpose](https://github.com/MouseLand/cellpose) environment creation, and [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installation. **Parameters** are here *strings* defining the below mentioned naming convention and *image calibration*. Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image. When opening resulting CSV files by Excel, use comma as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
     
-3.	**MITO_FRAGMENT_BASED_ANALYSIS.ijm:**
+4.	**MITO_FRAGMENT_BASED_ANALYSIS.ijm:**
 
     - This macro operates by opening a segmented image in Fiji containing the "SEG" string and its corresponding fluorescence image with the "pro" string in the same directory.
     - It conducts an analysis of intensities, perimeter, length of the major and minor axes of the circumscribed ellipse, and [morphological characteristics](https://imagej.net/ij/docs/menus/analyze.html#set) – circularity, aspect ratio, roundness, solidity – of individual mitochondria on the entire image and per each fragment.
