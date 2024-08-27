@@ -14,7 +14,7 @@ The Olympus IX-71 inverted microscope equipped with a 100x PlanApochromat object
 
 ### Image Processing Macros
 
-Three distinct macros were developed for ImageJ/Fiji to process the acquired images:
+Four distinct macros were developed for ImageJ/Fiji to process the acquired images:
 
 1. **MITO_MULTI_GLOBAL_THRESHOLDING.ijm:**
 
@@ -23,8 +23,11 @@ Three distinct macros were developed for ImageJ/Fiji to process the acquired ima
     - The optimal segmented image is chosen by an expert based on appropriate thresholds (**Fig. 2**).
     - Usage: Two **parameters** are applied, firstly, "*noiseSizeInPixels*", i.e. after global thresholding objects having sizes smaller and equal to this number are removed from the picture. Secondly, "*numThresh*" is number of consecutive global thresholds applied to the fluorescence image. Open "alpha_WT_control_pro_02.tif" in Fiji, then run the macro. Resulting images and a preprocessed version will be saved in the same directory.
 
+2. **MITO_PREPROCESSING.ijm:**
 
-2. **MITO_CELL_BASED_ANALYSIS.ijm:**
+   - This macro preprocesses fluorescence images (**Fig. 1**) very simply to make subsequent segmentation of mitochondrial fragments easier using just [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background) and outlier elimination.
+
+4. **MITO_CELL_BASED_ANALYSIS.ijm:**
 
     - This macro utilizes fluorescent images, mitochondrial segmentation, and corresponding DIC images (**Fig. 6**). DIC images are used to relate segmented mitochondria and their parameters to individual cells.
     - Processes the segmented image with [local thickness](https://imagej.net/imagej-wiki-static/Local_Thickness) (**Fig. 4**) analysis and [skeletonization](https://imagej.net/plugins/skeletonize3d) (**Fig. 5**) to determine mitochondrial thickness, lengths, branching, [Branching Factor](https://www.tandfonline.com/doi/full/10.3109/01913123.2015.1054013), and Filamentous Factor, see also below.
