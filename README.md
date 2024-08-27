@@ -25,7 +25,7 @@ Four distinct macros were developed for ImageJ/Fiji to process the acquired imag
 
 2. **MITO_PREPROCESSING.ijm:**
 
-   - This macro preprocesses fluorescence images (**Fig. 1**) to make subsequent segmentation of mitochondrial fragments  using [MitoSegNet](https://github.com/mitosegnet) easier. It applies simply [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background) and outlier elimination.
+   - This macro preprocesses fluorescence images (**Fig. 1**) to make subsequent segmentation of mitochondrial fragments  using [MitoSegNet](https://github.com/mitosegnet) easier. It applies simply [background subtraction](https://imagejdocu.list.lu/gui/process/subtract_background) and outlier elimination. The preprocessed image just replaces the original one.
 
 3. **MITO_CELL_BASED_ANALYSIS.ijm:**
 
