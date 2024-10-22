@@ -71,6 +71,10 @@ The corresponding program for mitochondria segmentation that can utilize this mo
 
 In DIC images, occasional dead cells are observed, potentially impacting the analysis. These cells appear as darker objects (**Fig. 6**). In fluorescence images, similar objects mimic the original cells but with reduced intensity and lacking recognized mitochondria. Deep learning-based segmentation and global thresholding both fail to detect these shapes due to lack of training or intensity below the threshold. As a result, images containing dead cells are excluded from the analysis.
 
+### A newly retrained model and data
+
+According to reviewer's comment and proposal the original MitoSegNet model was also retrained using another set of data: The new model (MitoS_yeast_CB) was trained to detect mitochondria of wild-type and fission mutant dnm1(delta) from noisy background (dead cells, unlabelled cells exhibiting autofluorescence and artificial spots on background). Both the model and image examples can be found [here](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5?path=%2FMitoS_yeast_CB_model_and_corresponding_images).
+
 ### Images
 
 Fig. 1: **Fluorescence images** of mitochondria (WILD Control/WILD Treated):
