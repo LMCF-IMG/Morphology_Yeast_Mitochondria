@@ -73,7 +73,7 @@ In DIC images, occasional dead cells are observed, potentially impacting the ana
 
 ### A newly retrained model and data
 
-According to reviewer's comment and proposal the original MitoSegNet model was also retrained using another set of data: The new model (MitoS_yeast_CB) was trained to detect mitochondria of wild-type and fission mutant dnm1(delta) from noisy background (dead cells, unlabelled cells exhibiting autofluorescence and artificial spots on background). Both the model and image examples can be found [here](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5?path=%2FMitoS_yeast_CB_model_and_corresponding_images).
+According to reviewer's comment and proposal the original MitoSegNet model was also retrained using another set of data: The new model (MitoS_yeast_CB) was trained to detect mitochondria of wild-type and fission mutant dnm1∆ from noisy background (dead cells, unlabelled cells exhibiting autofluorescence and artificial spots on background). Both the model and image examples can be found [here](https://owncloud.cesnet.cz/index.php/s/cnDFxKV5wVLLTt5?path=%2FMitoS_yeast_CB_model_and_corresponding_images).
 
 ### Images
 
