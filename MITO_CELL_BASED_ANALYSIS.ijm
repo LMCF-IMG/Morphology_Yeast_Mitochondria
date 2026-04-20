@@ -5,13 +5,9 @@ var strSEG = "_SEG_";
 
 var unit = "µm";
 
-//Jana data calibration
-//var pixelWidth = 0.0645;
-//var pixelHeight  = 0.0645;
-
-//Mark data calibration
-var pixelWidth = 0.0735;
-var pixelHeight  = 0.0735;
+// yeast image calibration (pixel size)
+var pixelWidth = 0.0645;
+var pixelHeight  = 0.0645;
 // PARAMETERS
 
 // settings
