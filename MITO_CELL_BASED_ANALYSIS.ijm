@@ -8,6 +8,9 @@ var unit = "µm";
 // yeast image calibration (pixel size)
 var pixelWidth = 0.0645;
 var pixelHeight  = 0.0645;
+
+// ! important - the path to cellpose environment in anaconda in your pc have to be properly set
+pathCellpose = "c:\\Users\\capekm\\AppData\\Local\\anaconda3\\envs\\cellpose4\\";
 // PARAMETERS
 
 // settings
@@ -434,12 +437,8 @@ function preparation() {
 	
 	// segmentation of DIC
 	selectWindow("DIC");
-//OLD CELLPOSE
-//	run("Cellpose Advanced", "diameter=69 cellproba_threshold=0.0 flow_threshold=0.4 "  + 
-//		"anisotropy=1.0 diam_threshold=12.0 model=cyto nuclei_channel=2 cyto_channel=1 " + 
-//		"dimensionmode=2D stitch_threshold=-1.0 omni=false cluster=false additional_flags=");
 
-	run("Cellpose ...", "env_path=c:\\Users\\capekm\\AppData\\Local\\anaconda3\\envs\\cellpose4\\ env_type=conda " + 
+	run("Cellpose ...", "env_path=" + pathCellpose + " env_type=conda " + 
 		"model=cyto model_path=path\\to\\own_cellpose_model diameter=69 ch1=0 ch2=0 additional_flags=--use_gpu");
 	run("3-3-2 RGB");
 	
