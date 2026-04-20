@@ -1,8 +1,8 @@
 // PARAMETER
 unit = "µm";
-// callibration from Mark R.
-pixelWidth = 0.0735;
-pixelHeight  = 0.0735;
+// calibration (pixel size) of yeast images
+pixelWidth = 0.0645;
+pixelHeight  = 0.0645;
 // PARAMETER
 saveSettings();
 
