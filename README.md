@@ -35,7 +35,8 @@ Four distinct macros were developed for ImageJ/Fiji to process the acquired imag
     - Segments yeast cells using the [Cellpose](https://github.com/MouseLand/cellpose) (**Fig. 7**) method and generates stacks containing segmentation, skeletons, and local thickness for each cell.
     - Various measurements are taken for individual mitochondria in each cell, including length, average thickness, intensity, mitochondrial area, circularity, and cell area.
     - Supporting images and numerical results are saved as TIF and CSV files, respectively, for verification.
-    - Usage: Requires [Anaconda](https://www.anaconda.com/) installation, [Cellpose](https://github.com/MouseLand/cellpose) environment creation, and [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installation. **Parameters** are here *strings* defining the below mentioned naming convention, *image calibration* where you set the proper pixel size of your images and *pathCellpose* where you have to enter the path to cellpose environment in anaconda in your pc.
+    - Usage: Requires [Anaconda](https://www.anaconda.com/) installation, [Cellpose](https://github.com/MouseLand/cellpose) environment creation, and [Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers) for Fiji installation. **Parameters** are here *strings* defining the below mentioned naming convention, *image calibration* where you set the proper pixel size of your images and *pathCellpose* where you have to enter the path to cellpose environment in anaconda in your pc.  
+
 Open the macro, select "alpha_WT_control_DIC_02.tif," and run the analysis. Results are stored in the directory of the selected DIC image. When opening resulting CSV files by Excel, use comma as a separator. Since the macro computes morfological parameters for each cell separately, it takes several minutes to finish. 
     
 4.	**MITO_FRAGMENT_BASED_ANALYSIS.ijm:**
