@@ -1,5 +1,9 @@
 # Morphology_Yeast_Mitochondria
 
+Analysis of Mitochondrial Morphology Using Widefield Fluorescence Microscopy and Image Processing Macros
+
+**Macros for [ImageJ/Fiji](https://fiji.sc/).**
+
 **Related publication:**
 
 Vojtová, J., Čapek, M., Willeit, S., Groušl, T., Chvalová, V., Kutejová, E., Pevala, V., Valášek, L.S., & Rinnerthaler, M. (2024). A fully automated morphological analysis of yeast mitochondria from wide-field fluorescence images. *Scientific Reports*, *14*(1), 30144. [https://doi.org/10.1038/s41598-024-81241-0](https://doi.org/10.1038/s41598-024-81241-0)
@@ -7,10 +11,6 @@ Vojtová, J., Čapek, M., Willeit, S., Groušl, T., Chvalová, V., Kutejová, E.
 **Detailed protocol on protocols.io:**
 
 [Quantitative morphological analysis of yeast Saccharomyces cerevisiae mitochondria, and other filamentous structures from wide-field fluorescence images](https://www.protocols.io/view/quantitative-morphological-analysis-of-yeast-sacch-j6r4crd8x)
-
-Analysis of Mitochondrial Morphology Using Widefield Fluorescence Microscopy and Image Processing Macros
-
-**Macros for [ImageJ/Fiji](https://fiji.sc/).**
 
 ### Introduction
 
